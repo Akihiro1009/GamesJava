@@ -1,13 +1,20 @@
 import java.util.Random;
 
 public class AnswerGen {
-    public static void answerGen(){
+    int ans1;
+    int ans2;
+    int ans3;
+
+    public AnswerGen() {
+    }
+
+    public void answerGen(){
         Random rand1 = new Random();
-        int ans1 = rand1.nextInt(10) + 1;
+        ans1 = rand1.nextInt(10) + 1;
         Random rand2 = new Random();
-        int ans2 = rand2.nextInt(10) + 1;
+        ans2 = rand2.nextInt(10) + 1;
         Random rand3 = new Random();
-        int ans3 = rand3.nextInt(10) + 1;
+        ans3 = rand3.nextInt(10) + 1;
         System.out.println("===FirstGen===");
         System.out.println(" >>> ans1: " + ans1);
         System.out.println(" >>> ans2: " + ans2);
@@ -38,4 +45,5 @@ public class AnswerGen {
         System.out.println(" >>> ans3: " + ans3);
         System.out.println(">>>>>>>><<<<<<<<");
     }
+
 }
