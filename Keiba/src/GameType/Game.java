@@ -17,7 +17,7 @@ public class Game {
     /* should I use enum?
     enum Games{
 
-    }
+
     */
 
 
