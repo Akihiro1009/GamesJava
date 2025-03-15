@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/java/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/randomGames/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Keiba/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
