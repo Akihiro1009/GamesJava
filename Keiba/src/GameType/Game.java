@@ -17,11 +17,12 @@ public class Game {
     /* should I use enum?
     enum Games{
 
-
+    }
     */
 
 
     public String getGameName() {
         return gameName;
     }
+
 }
