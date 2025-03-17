@@ -9,7 +9,7 @@ public class Race {
     private static String winner3;
 
     public static void setWinner(){ //make winner random from runner[]
-        Random temp1 = new Random(); //random from runner array.
+        Random temp1 = new Random();  //why is it okay only 1 temp1? don't I need 3 temp?
         winner1 = temp1.nextInt(runner.length)+""; //what is this +"" at the end?
         winner2 = temp1.nextInt(runner.length)+"";
         winner3 = temp1.nextInt(runner.length)+"";
