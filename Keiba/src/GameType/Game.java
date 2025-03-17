@@ -1,13 +1,14 @@
 package GameType;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Game {
     private String gameName;
     private ArrayList<String > games;
 
+    public Game(){
+
+    }
     public Game(String gameName) {
         this.gameName = gameName;
     }
@@ -21,8 +22,8 @@ public class Game {
     */
 
 
-    public String getGameName() {
-        return gameName;
+    public void getGameNames() {
+        System.out.println(Win.getGameName() + "\n" + Trio.getGameName());
     }
 
 }

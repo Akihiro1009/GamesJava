@@ -3,15 +3,26 @@ package GameType;
 import java.util.Scanner;
 
 public class Win extends Game{ //単勝
-    private String guess;
     static Scanner sc = new Scanner(System.in);
+    private static final String name = "Win";
+    private String guess;
 
-    public Win(String gameName) {
-        super(gameName);
+    public Win(String guess) {
+        this.guess = guess;
     }
 
     public String getGuess() {
-        System.out.println("Guess which hours wins.");
+        return guess;
+    }
 
+    public void setGuess() {
+        System.out.println("Guess which hours wins.");
+        String tempGuess = sc.nextLine();
+
+        guess = tempGuess;
+    }
+
+    public static String getGameName() {
+        return name;
     }
 }
