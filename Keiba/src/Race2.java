@@ -1,11 +1,14 @@
 import java.util.*;
 
 public class Race2 {
+    public Race2() {
+    }
+
     public static String[] runner = {"h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8", "h9", "h10", "h11", "h12"};
 
     public static String[] result = new String[runner.length];
 
-    public static void setWinner(){
+    public void startGame(){
         List<String> runnerList = Arrays.asList(runner);
         Collections.shuffle(runnerList); //using shuffle() to shuffle the order.
         result = runnerList.toArray(result);
@@ -42,7 +45,8 @@ public class Race2 {
     }
 
     public static void main(String[] args) {
-        setWinner();
+        Race2 r = new Race2();
+        r.startGame();
         System.out.println("done execution");
     }
 }

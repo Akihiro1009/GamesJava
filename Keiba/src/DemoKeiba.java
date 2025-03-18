@@ -1,9 +1,18 @@
 import GameType.Game;
+import GameType.Win;
 
 public class DemoKeiba {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.getGameNames();
+        Win win = new Win();
+        win.setGuess();
+
+        Race2 race = new Race2();
+        race.startGame();
+
+        win.win(win, race);
+
+        //Game game = new Game();
+        //game.getGameNames();
 
         Race.setWinner();
     }
