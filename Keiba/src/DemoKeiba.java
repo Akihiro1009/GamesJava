@@ -3,8 +3,8 @@ import GameType.Win;
 
 public class DemoKeiba {
     public static void main(String[] args) {
-        //Win win = new Win();
-        //win.setGuess();
+        Win win = new Win();
+        win.setGuess();
 
         Race2 race = new Race2();
         race.startGame();
