@@ -19,7 +19,7 @@ public class Win extends Game{ //単勝
     }
 
     public void setGuess() {
-        System.out.println("Guess which hours wins.");
+        System.out.print("Guess which hours wins >>> ");
         String tempGuess = sc.nextLine();
 
         guess = tempGuess;
@@ -30,8 +30,10 @@ public class Win extends Game{ //単勝
     }
 
     public String win(Win guess, Race2 race){ //how can i import package?
-        if (guess.equals(race[0]))
-
-        return null;
+        if (guess.equals(race.result.length)){
+            return "correct";
+        } else {
+            return "incorrect";
+        }
     }
 }

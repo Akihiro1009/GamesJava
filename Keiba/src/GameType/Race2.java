@@ -6,9 +6,9 @@ public class Race2 {
     public Race2() {
     }
 
-    public static String[] runner = {"h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8", "h9", "h10", "h11", "h12"};
+    public  String[] runner = {"h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8", "h9", "h10", "h11", "h12"};
 
-    public static String[] result = new String[runner.length];
+    public  String[] result = new String[runner.length];
 
     public void startGame(){
         List<String> runnerList = Arrays.asList(runner);
