@@ -14,6 +14,6 @@ public class DemoKeiba {
         //Game game = new Game();
         //game.getGameNames();
 
-        Race.setWinner();
+        //Race.setWinner();
     }
 }

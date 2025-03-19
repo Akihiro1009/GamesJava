@@ -20,14 +20,19 @@ public class Race2 {
             System.out.println(r);
         }
 
-        System.out.println("----------------------");
+        //System.out.println("----------------------");
 
+        /*
         for (int j = 0; j < result.length; j++) {
             System.out.println(result[j]);
         }
+        */
 
         System.out.println("----------------------");
 
+        System.out.println("Winner1: " + result[0]);
+        System.out.println("Winner2: " + result[1]);
+        System.out.println("Winner3: " + result[2]);
         //it is already converted into Array, so no need this execution.
         /*for (int i = 1; i < result.length; i++) {
             result[i] = runnerList.get(i - 1);
