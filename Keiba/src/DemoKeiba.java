@@ -1,4 +1,4 @@
-import GameType.Game;
+import GameType.Race2;
 import GameType.Win;
 
 public class DemoKeiba {

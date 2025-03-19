@@ -1,3 +1,5 @@
+package GameType;
+
 import java.util.*;
 
 public class Race2 {
