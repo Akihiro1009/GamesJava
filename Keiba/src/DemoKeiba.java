@@ -1,8 +1,12 @@
 import GameType.Race2;
 import GameType.Win;
 
+import java.awt.*;
+
 public class DemoKeiba {
     public static void main(String[] args) {
+        MenuKeiba.menu();
+
         Win win = new Win();
         win.setGuess();
 
