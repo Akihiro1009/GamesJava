@@ -10,6 +10,7 @@ public class Win extends Game{ //単勝
 
     public Win() {
     }
+
     public Win(String guess) {
         this.guess = guess;
     }
@@ -19,7 +20,7 @@ public class Win extends Game{ //単勝
     }
 
     public void setGuess() {
-        System.out.print("Guess which hours wins (1 to 12)>>> ");
+        System.out.print("Guess which hours wins (1 to 12) >>> ");
         String tempGuess = sc.nextLine();
 
         guess = tempGuess;

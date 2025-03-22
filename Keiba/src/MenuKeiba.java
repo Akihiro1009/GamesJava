@@ -12,33 +12,28 @@ public class MenuKeiba {
         String[] gameName = {"Win", "Trio", "Trifecta", "QuinellaPlace", "Quinella", "Place", "Exact"};
 
         switch (input.question(List.of(gameName), Arrays.toString(gameName) + "\nEnter Ticket you want to buy >>> ")){
-            case "Win":
+            case "win":
                 Win win = new Win();
                 win.getGuess();
             break;
 
-            case "Trio":
+            case "trio":
             break;
 
-            case "Trifecta":
+            case "trifecta":
             break;
 
-            case "QuinellaPlace":
+            case "quinellaPlace":
             break;
 
-            case "Quinella":
+            case "quinella":
             break;
 
-            case "Place":
+            case "place":
             break;
 
-            case "Exact":
+            case "exact":
             break;
         }
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 }

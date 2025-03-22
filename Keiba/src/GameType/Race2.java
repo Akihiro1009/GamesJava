@@ -10,14 +10,17 @@ public class Race2 {
 
     public  String[] result = new String[runner.length];
 
+    static int i = 1;
     public void startGame(){
         List<String> runnerList = Arrays.asList(runner);
         Collections.shuffle(runnerList); //using shuffle() to shuffle the order.
         result = runnerList.toArray(result);
 
         //What is (String r : result)?
-        for (String r : result) {
+        for ( String r : result) {
+            System.out.print(i + ": " );
             System.out.println(r);
+            i++;
         }
 
         //System.out.println("----------------------");
