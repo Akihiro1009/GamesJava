@@ -31,6 +31,7 @@ public class Win extends Game{ //単勝
     }
 
     public String win(Win guess, Race2 race){ //how can i import package?
+        //todo why isn't it working????????
         if (guess.equals(race.result.length)){
             return "correct";
         } else {
