@@ -7,13 +7,13 @@ public class DemoKeiba {
     public static void main(String[] args) {
         MenuKeiba.menu();
 
-        Win win = new Win();
-        win.setGuess();
+        Win win1 = new Win();
+        win1.setGuess();
 
         Race2 race = new Race2();
         race.startGame();
 
-        win.win(win, race);
+        win1.result(win1, race);
 
         //Game game = new Game();
         //game.getGameNames();
