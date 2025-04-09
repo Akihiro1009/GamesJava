@@ -3,6 +3,10 @@ package GameType;
 import java.util.*;
 
 public class Race2 {
+    private static String winner1;
+    private static String winner2;
+    private static String winner3;
+
     public Race2() {
     }
 
@@ -33,9 +37,14 @@ public class Race2 {
 
         System.out.println("----------------------");
 
-        System.out.println("Winner1: " + result[0]);
-        System.out.println("Winner2: " + result[1]);
-        System.out.println("Winner3: " + result[2]);
+        winner1 = result[0];
+        winner2 = result[1];
+        winner3 = result[2];
+
+        System.out.println("Winner1: " + winner1);
+        System.out.println("Winner2: " + winner2);
+        System.out.println("Winner3: " + winner3);
+
         //it is already converted into Array, so no need this execution.
         /*for (int i = 1; i < result.length; i++) {
             result[i] = runnerList.get(i - 1);
@@ -58,5 +67,13 @@ public class Race2 {
         Race2 r = new Race2();
         r.startGame();
         System.out.println("done execution");
+    }
+
+    public String getWinner1() {
+        return winner1;
+    }
+
+    public String getWinners() {
+        return winner1 + winner2 + winner3;
     }
 }

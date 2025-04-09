@@ -8,7 +8,7 @@ public class Race {
     private static String winner2;
     private static String winner3;
 
-    public static void setWinner(){ //make winner random from runner[]
+    public void setWinner(){ //make winner random from runner[]
         Random temp1 = new Random();  //why is it okay only 1 temp1? don't I need 3 temp?
         winner1 = temp1.nextInt(runner.length)+""; //what is this +"" at the end?
         winner2 = temp1.nextInt(runner.length)+"";
@@ -22,15 +22,17 @@ public class Race {
 
     }
 
-    public static String getWinner(){ //not working
+    public String getWinner(){ //not working
         return "Winner1: " + winner1 +
                 "\nWinnder2: " + winner2 +
                 "\nWinnder3" + winner3;
     }
 
-    public static void main(String[] args) {
-            setWinner();
+    public String getWinner1(){
+        return winner1;
     }
 
-    //
+    public static void main(String[] args) {
+
+    }
 }
