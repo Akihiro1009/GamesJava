@@ -60,6 +60,7 @@ public class Race2 {
         System.out.println("winndre1 = " + winner1);
         System.out.println("winndre2 = " + winner2);
         System.out.println("winndre3 = " + winner3);
+        System.out.println("----------------------");
     }
 
     public static void main(String[] args) {
