@@ -1,11 +1,13 @@
+package GameType;
+//todo into src folder
+
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReferenceArray;
 
 
 public class Race2 {
-    private static String winner1;
-    private static String winner2;
-    private static String winner3;
+    private static Horses winner1;
+    private static Horses winner2;
+    private static Horses winner3;
 
     public Race2() {
     }
@@ -51,9 +53,9 @@ public class Race2 {
             j++;
         }*/
 
-        winner1 = horseList.get(0).toString();
-        winner2 = horseList.get(1).toString();
-        winner3 = horseList.get(2).toString();
+        winner1 = horseList.get(0);
+        winner2 = horseList.get(1);
+        winner3 = horseList.get(2);
         System.out.println("----------------------");
         System.out.println("winndre1 = " + winner1);
         System.out.println("winndre2 = " + winner2);
@@ -66,13 +68,13 @@ public class Race2 {
         System.out.println("done execution");
     }
 
-    public String getWinner1() {
+    public Horses getWinner1() {
         return winner1;
     }
 
-    public String getWinners() {
+    /*public Horses getWinners() {
         return winner1 + winner2 + winner3;
-    }
+    }*/
 
     public Horses getHorse1() {
         return horse1;

@@ -1,8 +1,9 @@
-import GameType.Win;
+package GameType;
+//todo into src folder
 
 public class DemoKeiba {
     public static void main(String[] args) {
-        //MenuKeiba.menu();
+        //GameType.MenuKeiba.menu();
 
         Win win1 = new Win();
         win1.setGuess();

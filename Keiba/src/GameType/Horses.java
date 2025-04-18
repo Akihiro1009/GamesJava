@@ -1,3 +1,6 @@
+package GameType;
+//todo I want to put this class in src package.
+
 public class Horses {
     private int number;
     private String hname;

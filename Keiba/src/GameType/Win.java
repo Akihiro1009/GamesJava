@@ -1,7 +1,6 @@
 package GameType;
 
 import java.util.Scanner;
-//import src.*;
 
 public class Win extends Game{ //単勝
     static Scanner sc = new Scanner(System.in);
@@ -28,11 +27,11 @@ public class Win extends Game{ //単勝
         return name;
     }
 
-    public String result(int guess, String race){ //how can i import package?
-        System.out.println("race: " + race);
+    public String result(int guess, Horses winnerHorse){ //how can i import package?
+        System.out.println("winner: " + winnerHorse);
+        System.out.println("number: " + winnerHorse.getNumber());
         System.out.println("guess: " + guess);
-        if (guess == 0){ //the data of index of 0 of resultArray.
-            System.out.println("tester");
+        if (guess == winnerHorse.getNumber()){
             return "correct";
         } else {
             System.out.println("incorrect");

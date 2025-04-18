@@ -1,3 +1,6 @@
+package GameType;
+//todo into src folder
+
 import java.util.Scanner;
 import java.util.List;
 
