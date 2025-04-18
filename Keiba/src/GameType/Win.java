@@ -1,5 +1,6 @@
 package GameType;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Win extends Game{ //単勝
@@ -19,8 +20,10 @@ public class Win extends Game{ //単勝
     }
 
     public void setGuess() {
-        System.out.print("Guess which hours wins (1 to 12) >>> ");
-        guess = sc.nextInt();
+        do {
+            System.out.print("Guess which hours wins (1 to 12) >>> ");
+            guess = sc.nextInt();
+        } while (guess < 1 || guess > 12);
     }
 
     public static String getGameName() {

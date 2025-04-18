@@ -12,27 +12,38 @@ public class MenuKeiba {
 
         switch (input.question(List.of(gameName), Arrays.toString(gameName) + "\nEnter Ticket you want to buy >>> ")){
             case "win":
-                Win win = new Win();
-                win.setGuess();
-            break;
+                while (true) {
+                    Win win = new Win();
+                    win.setGuess();
+                    Race2 race2 = new Race2();
+                    race2.startGame();
+                    win.result(win.getGuess(), race2.getWinner1());
+
+                    switch (input.question(List.of("y","n"),"Do you want to continue? ")){
+                        case "y":
+                            break;
+                        case "n":
+                            return;
+                    }
+                }
 
             case "trio":
-            break;
+                break;
 
             case "trifecta":
-            break;
+                break;
 
             case "quinellaPlace":
-            break;
+                break;
 
             case "quinella":
-            break;
+                break;
 
             case "place":
-            break;
+                break;
 
             case "exact":
-            break;
+                break;
         }
     }
 }
