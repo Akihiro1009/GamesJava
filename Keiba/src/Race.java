@@ -1,8 +1,12 @@
+/*
 import java.sql.Array;
 import java.util.Random;
 
 public class Race {
     public static String[] runner = {"h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8", "h9", "h10", "h11", "h12"};
+
+    //馬番号と馬名を追加する。
+
 
     private static String winner1;
     private static String winner2;
@@ -36,3 +40,4 @@ public class Race {
 
     }
 }
+*/

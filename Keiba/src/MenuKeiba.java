@@ -14,7 +14,7 @@ public class MenuKeiba {
         switch (input.question(List.of(gameName), Arrays.toString(gameName) + "\nEnter Ticket you want to buy >>> ")){
             case "win":
                 Win win = new Win();
-                win.getGuess();
+                win.setGuess();
             break;
 
             case "trio":

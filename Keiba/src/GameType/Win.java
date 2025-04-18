@@ -6,34 +6,32 @@ import java.util.Scanner;
 public class Win extends Game{ //単勝
     static Scanner sc = new Scanner(System.in);
     private static final String name = "Win";
-    private String guess;
+    private int guess;
 
     public Win() {
     }
 
-    public Win(String guess) {
+    public Win(int guess) {
         this.guess = guess;
     }
 
-    public String getGuess() {
+    public int getGuess() {
         return guess;
     }
 
     public void setGuess() {
         System.out.print("Guess which hours wins (1 to 12) >>> ");
-        String tempGuess = sc.nextLine();
-
-        guess = tempGuess;
+        guess = sc.nextInt();
     }
 
     public static String getGameName() {
         return name;
     }
 
-    public String result(Win guess, String race){ //how can i import package?
-        //todo why isn't it working????????
+    public String result(int guess, String race){ //how can i import package?
         System.out.println("race: " + race);
-        if (guess.equals(race)){ //the data of index of 0 of resultArray.
+        System.out.println("guess: " + guess);
+        if (guess == 0){ //the data of index of 0 of resultArray.
             System.out.println("tester");
             return "correct";
         } else {
