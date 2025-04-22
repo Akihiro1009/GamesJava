@@ -39,6 +39,8 @@ public class MenuKeiba {
                 break;
 
             case "quinella":
+                Quinella quinella = new Quinella(p1);
+                quinella.setGuess();
                 break;
 
             case "place":
