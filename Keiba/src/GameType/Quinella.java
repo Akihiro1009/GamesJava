@@ -27,11 +27,23 @@ public class Quinella extends Game{ //馬連
     public void setGuess() {
         System.out.print("Make a first guess (1 to 12) >>> ");
         guess1 = sc.nextInt();
-        System.out.printf("Make a second guess (1 to 12) >>> ");
+        System.out.print("Make a second guess (1 to 12) >>> ");
         guess2 = sc.nextInt();
         if (guess1 == guess2) {
             System.out.println("Your second guess is the same");
             setGuess();
         }
     }
+
+    public void setQuinellaBet(){
+        System.out.println("How much do you want to bet? >>> ");
+        int betPrice = sc.nextInt();
+        player.setAmount(betPrice);
+        player.bet(betPrice);
+    }
+
+    public static String getGameName(){
+        return name;
+    }
+
 }
