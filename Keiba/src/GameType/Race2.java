@@ -73,6 +73,14 @@ public class Race2 {
         return winner1;
     }
 
+    public Horses getWinner2() {
+        return winner2;
+    }
+
+    public Horses getWinner3() {
+        return winner3;
+    }
+
     /*public Horses getWinners() {
         return winner1 + winner2 + winner3;
     }*/

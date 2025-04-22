@@ -39,7 +39,7 @@ public class Quinella extends Game{ //馬連
     }
 
     public void setQuinellaBet(){
-        System.out.println("How much do you want to bet? >>> ");
+        System.out.print("How much do you want to bet? >>> ");
         int betPrice = sc.nextInt();
         player.setAmount(betPrice);
         player.bet(betPrice);
@@ -49,7 +49,18 @@ public class Quinella extends Game{ //馬連
         return name;
     }
 
-    public String result(int guess1, int guess2, Horses winnerHorse, int betAmount){
-        System.out.println("");
+    public String result(int guess1, int guess2, Horses winnerHorse1, Horses winnerHorse2, int betAmount){
+        if ((guess1 == winnerHorse1.getNumber() && guess1 == winnerHorse2.getNumber()) ||
+            (guess2 == winnerHorse1.getNumber() && guess2 == winnerHorse2.getNumber())) { //ここのシステムの作り方。
+            System.out.println("🎉congratulations!🎉");
+            int payout = betAmount * 100;
+            player.win(payout);
+            player.getMoney();
+            return "tester";
+        } else {
+            System.out.println("sorry... Your guess was wrong.");
+            player.getMoney();
+            return "tester";
+        }
     }
 }
