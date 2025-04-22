@@ -41,6 +41,18 @@ public class MenuKeiba {
             case "quinella":
                 Quinella quinella = new Quinella(p1);
                 quinella.setGuess();
+
+                Race2 race2 = new Race2();
+                race2.startGame();
+
+                quinella.result(quinella.getGuess1(), quinella.getGuess2(), race2.getWinner1(), p1.getAmount());
+
+                switch (input.question(List.of("y","n"),"Do you want to continue? ")){
+                    case "y":
+                        break;
+                    case "n":
+                        return;
+                }
                 break;
 
             case "place":

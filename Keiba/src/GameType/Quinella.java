@@ -20,8 +20,11 @@ public class Quinella extends Game{ //馬連
         this.player = player;
     }
 
-    public int getGuess(){
-        return guess1 + guess2;
+    public int getGuess1(){
+        return guess1;
+    }
+    public int getGuess2(){
+        return guess2;
     }
 
     public void setGuess() {
@@ -46,4 +49,7 @@ public class Quinella extends Game{ //馬連
         return name;
     }
 
+    public String result(int guess1, int guess2, Horses winnerHorse, int betAmount){
+        System.out.println("");
+    }
 }
