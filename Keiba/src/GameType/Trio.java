@@ -11,5 +11,5 @@ public class Trio extends Game{ //3連複
     }
 
     //next step
-    //daily commit347
+    //daily commit3478
 }
