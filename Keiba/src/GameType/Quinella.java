@@ -61,7 +61,7 @@ public class Quinella extends Game{ //馬連
             System.out.println("sorry... Your guess was wrong.");
             player.getMoney();
             return "tester";
-            //commitment
+            //commitment6
         }
     }
 }
