@@ -9,4 +9,7 @@ public class Trio extends Game{ //3連複
     public static String getGameName() {
         return name;
     }
+
+    //next step
+    //daily commit3478
 }
